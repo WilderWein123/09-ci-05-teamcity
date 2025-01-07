@@ -33,7 +33,7 @@ docker run -e SERVER_URL=http://192.168.88.165:8111 --name="teamcity-agent" -d j
 
 > 4. Поменяйте условия сборки: если сборка по ветке `master`, то должен происходит `mvn clean deploy`, иначе `mvn clean test`.
 
-<img src = "img/img4.jpg" width = 100%
+<img src = "img/img4.jpg" width = 100%>
 
 
 5. Для deploy будет необходимо загрузить [settings.xml](./teamcity/settings.xml) в набор конфигураций maven у teamcity, предварительно записав туда креды для подключения к nexus.
@@ -41,7 +41,7 @@ docker run -e SERVER_URL=http://192.168.88.165:8111 --name="teamcity-agent" -d j
 
 > 7. Запустите сборку по master, убедитесь, что всё прошло успешно и артефакт появился в nexus.
 
-<img src = "img/img7.jpg" width = 100%
+<img src = "img/img7.jpg" width = 100%>
 
 8. Мигрируйте `build configuration` в репозиторий.
 9. Создайте отдельную ветку `feature/add_reply` в репозитории.
